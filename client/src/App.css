@@ -1,0 +1,138 @@
+.App{
+  height: 100vh;
+  margin:0px ;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #474bbb;
+  color: white;
+  padding: 10px 20px;
+  flex-wrap: wrap; 
+}
+
+.heading {
+  font-size: 22px;
+  margin: 0;
+}
+
+.link-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  font-size: 16px;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.customer-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap; 
+}
+
+.customer-form {
+  height: 80vh;
+  width: 30vw;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px 2px rgba(91, 93, 92, 0.921);
+  background-color: rgba(229, 233, 231, 0.921);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.customer-list-container {
+  height: 80vh;
+  width: 60vw;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px 2px rgba(91, 93, 92, 0.921);
+  background-color: rgba(229, 233, 231, 0.921);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .customer-form {
+    width: 40vw;
+    height: auto;
+  }
+
+  .customer-list-container {
+    width: 50vw;
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .customer-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .customer-form,
+  .customer-list-container {
+    width: 90vw;
+    height: auto;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .link-container {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 18px;
+  }
+
+  .link-container {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+  }
+}
